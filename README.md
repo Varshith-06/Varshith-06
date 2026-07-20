@@ -1,118 +1,40 @@
-<div align="center">
+# ┌─────────────────────────────────────────────────────────────┐
+# │  Put this file at:  .github/workflows/snake.yml             │
+# │  (inside your "Varshith-06" profile repo)                   │
+# │                                                             │
+# │  Then: repo → Actions tab → "Generate snake" → Run workflow │
+# │  Run it ONCE manually. It refreshes itself daily after.     │
+# └─────────────────────────────────────────────────────────────┘
 
-```text
-██████████████████████████████████████████████████
+name: Generate snake
 
-               SIGNAL DETECTED
+on:
+  schedule:
+    - cron: "0 0 * * *" # every day at midnight UTC
+  workflow_dispatch: # gives you a manual "Run workflow" button
+  push:
+    branches: [main]
 
-██████████████████████████████████████████████████
-```
+permissions:
+  contents: write
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&pause=1400&color=00FF66&center=true&vCenter=true&width=800&lines=Booting...;Loading+memory...;Spawning+agents...;Listening+for+interrupts...;Reality+is+event-driven.;Everything+is+just+state."/>
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Varshith-06
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-</div>
-
----
-
-```text
-Power-On Self Test
-
-CPU ............... OK
-Memory ............ OK
-Storage ........... OK
-Network ........... CONNECTED
-
-Searching for consciousness...
-
-...
-
-...
-
-FOUND
-```
-
-```bash
-root@github:~# whoami
-
-varshith
-
-root@github:~# pwd
-
-/proc/self
-
-root@github:~# ls
-
-agentos/
-experiments/
-unfinished/
-ideas/
-```
-
----
-
-```text
-SYSTEM STATUS
-
-UPTIME          19 years
-STATUS          ONLINE
-PROCESS         BUILD
-TEMPERATURE     TOO HIGH
-SANITY          0x3F
-```
-
----
-
-```diff
-+ awake
-- asleep
-```
-
-> *There is no source of truth.*
->
-> *Only state.*
-
----
-
-<details>
-<summary>████ classified ████</summary>
-
-```text
-If you found this,
-
-you're probably the kind of person
-I'd enjoy building weird things with.
-
-Keep digging.
-```
-
-</details>
-
-<details>
-<summary>logs</summary>
-
-```text
-[00:00:00] process started
-[00:00:03] initialized curiosity
-[00:00:05] ignored documentation
-[00:00:07] everything somehow works
-```
-
-</details>
-
----
-
-<div align="center">
-
-```text
-root@github:~# █
-```
-
-</div>
-
-<!--
-
-There's nothing interesting down here.
-
-...or is there?
-
--->
+      - name: Push SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
