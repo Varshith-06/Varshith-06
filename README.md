@@ -1,72 +1,131 @@
-# Hi, I'm Sai Varshith 👋
+<div align="center">
 
-**3rd Year Mathematics & Computing @ IIIT Gwalior**
+<img src="./banner.svg" width="100%" alt="Sai Varshith — math × ML × multi-agent systems" />
 
-I build systems that sit close to the metal of AI — agent runtimes, retrieval pipelines, and the occasional game that actively works against you.
+</div>
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/sai-varshith-paluru/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://leetcode.com/u/Flare6/">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
-  </a>
-  <a href="mailto:saivarshith2006@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
+<br/>
+
+<div align="center">
+
+**`building AI that outsmarts other AI`** &nbsp;·&nbsp; **`B.Tech Math + Computing @ IIITM Gwalior`** &nbsp;·&nbsp; **`ex-Britannia`**
+
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## ▚ &nbsp;What I'm actually doing
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-  <img src="https://img.shields.io/badge/ChromaDB-FF6B6B?style=for-the-badge&logo=databricks&logoColor=white" alt="ChromaDB" />
-  <img src="https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge&logo=spacy&logoColor=white" alt="spaCy" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-</p>
+I build systems where **AI agents compete, cooperate, and occasionally betray each other** — then I build the tooling to measure exactly how well they do it. Somewhere between game theory, operations research, and "what if the OS scheduler, but for LLMs."
 
----
-
-## 🚀 Projects
-
-### [AgentOS](https://github.com/Varshith-06/AgentOS)
-An operating system for AI agents. Runs each agent as a separate OS process with full lifecycle management, crash recovery, and permission enforcement — a daemon that applications connect to over a TCP syscall boundary. Zero work is re-executed after a crash, cost is metered exactly across every task, and agent teams can be invented at runtime. Pure Python 3.11+ with SQLite persistence and no external dependencies, benchmarked head-to-head against LangGraph, CrewAI, AutoGen, and Temporal.
-
-### [Glance — Index & Retrieval Pipeline](https://github.com/Varshith-06/Glance-Index-Retrieval-Pipeline)
-A multimodal fashion image retrieval system built to fix CLIP's compositional blind spot. A hybrid retrieve-then-rerank pipeline pairs dense vector search with structured attribute matching so colors bind to the right garment — telling a "red tie and white shirt" apart from a "white tie and red shirt." Uses FashionCLIP, YOLOS-Fashionpedia, spaCy dependency parsing, ChromaDB, and LAB-space color matching. Runs fully offline, CPU-only, no external APIs.
-
-### [bluffhouse](https://github.com/hemeshch/bluffhouse)
-A poker table where language models bluff, whisper, signal, accuse, and betray each other.
-
-### [2048onSteroids](https://github.com/Varshith-06/2048onSteroids)
-2048, except new tiles spawn in the worst possible location every single time. Adversarial by construction.
-
-### [Website Summarizer — Chrome Extension](https://github.com/Varshith-06/Website-Summarizer-Chrome-Extension)
-A browser extension that condenses any page you're on down to the parts worth reading.
+```
+current_focus  →  multi-agent orchestration + benchmarking under adversarial conditions
+comfort_zone   →  optimization, time-series, anything with a loss function to minimize
+side_effect    →  a LeetCode Knight badge I refuse to let decay
+```
 
 ---
 
-## 📊 GitHub Stats
+## ▚ &nbsp;Things I built that I'm proud of
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Varshith-06&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Varshith-06&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top languages" height="165" />
-</p>
+<table>
+<tr>
+<td width="33%" valign="top">
 
-<p align="left">
-  <img src="https://leetcard.jacoblin.cool/Flare6?theme=nord&font=Noto%20Sans&ext=heatmap" alt="LeetCode stats" />
-</p>
+### 🃏 Agent Poker
+LLMs bluff, form alliances, and stab each other at a poker table. An **adversity-adjusted scoring engine** quantifies their deception and strategic manipulation. Machine scheming — as a benchmark.
+
+`FastAPI` · `PostgreSQL` · `Redis` · `SSE`
+
+**→ [repo](https://github.com/hemeshch/bluffhouse)**
+
+</td>
+<td width="33%" valign="top">
+
+### 🧬 AgentOS
+An **OS-inspired runtime** for LLM agents: cost-aware scheduling, token-budget allocation, and multi-criteria model routing (cost / latency / context), all on a live D3.js dashboard streamed over WebSockets.
+
+`PyTorch` · `React` · `D3.js` · `WS`
+
+**→ [repo](https://github.com/Varshith-06/AgentOS)**
+
+</td>
+<td width="33%" valign="top">
+
+### 😈 Adversarial 2048
+2048 that **fights back**. A CNN studies your moves and drops tiles designed to end your run. Average player survival: **−40%**. Full-stack, real-time worst-case inference.
+
+`TensorFlow` · `Django` · `React`
+
+**→ [repo](https://github.com/Varshith-06/2048onSteroids)**
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🐍 Contribution Graph
+## ▚ &nbsp;The stack
+
+<div align="center">
+
+<img src="./stats-panel.svg" width="100%" alt="proficiency panel" />
+
+</div>
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,cpp,java,ts,pytorch,tensorflow,sklearn,fastapi,django,react,nodejs,postgres,redis,docker,kubernetes,aws&perline=8" />
+
+</div>
+
+---
+
+## ▚ &nbsp;Field notes
+
+> **@ Britannia Industries** — forecasted wholesale stock with LightGBM / LSTMs / Temporal Fusion Transformers to **~4% MAPE**, wrote a TSP-variant routing algorithm that cut **3+ hours off daily salesman travel time**, and shipped a Streamlit + RAG dashboard to a **200-person team**.
+
+> **JEE Mains 2024** — 98.84 percentile out of 1.6M+ · &nbsp; **LeetCode** — Knight, 1850+ contest rating · &nbsp; **CGPA** — 9.18/10
+
+---
+
+## ▚ &nbsp;GitHub telemetry
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Varshith-06&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0814&title_color=00F0FF&icon_color=8A2BE2&text_color=c8d6ee" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Varshith-06&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0814&title_color=00F0FF&text_color=c8d6ee" />
+
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=Varshith-06&theme=tokyonight&hide_border=true&background=0A0814&ring=00F0FF&fire=8A2BE2&currStreakLabel=00F0FF" width="49%" />
+
+</div>
+
+<br/>
+
+<!-- the snake eats your contributions -->
+<div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Varshith-06/Varshith-06/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Varshith-06/Varshith-06/output/github-contribution-grid-snake.svg">
-  <img alt="snake animation of my GitHub contribution graph" src="https://raw.githubusercontent.com/Varshith-06/Varshith-06/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Varshith-06/Varshith-06/output/github-contribution-grid-snake-dark.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/Varshith-06/Varshith-06/output/github-contribution-grid-snake.svg" />
 </picture>
+
+</div>
+
+---
+
+<div align="center">
+
+### ▚ &nbsp;Open a channel
+
+<a href="https://linkedin.com/in/sai-varshith-paluru"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:saivarshith2006@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://leetcode.com/u/Flare6/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" /></a>
+
+<br/><br/>
+
+<sub><code>if you scrolled this far, the least you can do is star a repo</code></sub>
+
+</div>
