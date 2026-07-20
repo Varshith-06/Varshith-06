@@ -1,24 +1,29 @@
 <div align="center">
 
 ```text
-LOS ANGELES
-NOVEMBER, 2019
-
-A T Y R E L L
-
-S Y S T E M
+███████╗██╗   ██╗███████╗
+██╔════╝╚██╗ ██╔╝██╔════╝
+███████╗ ╚████╔╝ ███████╗
+╚════██║  ╚██╔╝  ╚════██║
+███████║   ██║   ███████║
+╚══════╝   ╚═╝   ╚══════╝
 ```
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=FF4D6D&center=true&width=700&lines=More+human+than+human.;Artificial+intelligence.;Artificial+everything."/>
+```bash
+root@github:~# ./whoami
+
+Sai Varshith
+
+> building distributed intelligence
+> breaking abstractions
+> making machines argue with each other
 
 ```
-STATUS        ONLINE
 
-LOCATION      somewhere between
-              machine learning
-              and science fiction
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&pause=1500&color=00FF00&center=true&vCenter=true&width=700&lines=hello,+friend.;reality+is+just+another+runtime.;there+are+no+finished+projects.;only+iterations."/>
 
-LAST LOGIN    just now
+```
+root@github:~# █
 ```
 
 </div>
